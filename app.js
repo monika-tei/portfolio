@@ -4,7 +4,7 @@ const grid = document.querySelector(".grid");
 const gridItems = [...document.querySelectorAll(".grid-item")];
 const gridRows = [...document.querySelectorAll(".row")];
 const images = [...document.querySelectorAll(".img")];
-const heading = document.querySelectorAll(".heading");
+const heading = document.querySelector(".heading");
 
 // use JS to apply the images, its JPG not JPEG
 images.forEach((img, idx) => {
@@ -33,24 +33,26 @@ gridItems.forEach((item, idx) => {
 
     gridItems[idx].classList.add("active");
 
-    if (idx == 0 || idx == 3) {
-      setActive[(0, 3)];
-    }
+    if (window.innerWidth > 600) {
+      if (idx == 0 || idx == 3) {
+        setActive[(0, 3)];
+      }
 
-    if (idx == 1 || idx == 4) {
-      setActive[(1, 4)];
-    }
+      if (idx == 1 || idx == 4) {
+        setActive[(1, 4)];
+      }
 
-    if (idx == 2 || idx == 5) {
-      setActive[(2, 5)];
-    }
+      if (idx == 2 || idx == 5) {
+        setActive[(2, 5)];
+      }
 
-    if (idx <= 2) {
-      gridRows[0].style.height = "70%";
-      gridRows[1].style.height = "30%";
-    } else {
-      gridRows[0].style.height = "30%";
-      gridRows[1].style.height = "70%";
+      if (idx <= 2) {
+        gridRows[0].style.height = "70%";
+        gridRows[1].style.height = "30%";
+      } else {
+        gridRows[0].style.height = "30%";
+        gridRows[1].style.height = "70%";
+      }
     }
   });
 });

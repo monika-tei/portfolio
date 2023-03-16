@@ -3,7 +3,7 @@
 :root {
   --bgr-color: #131313;
   --text-color: #ffffff;
-  --active-text-color: #9aeba3;
+  --active-text-color: #dcc0e8;
 }
 
 * {
@@ -60,6 +60,7 @@ body {
 }
 
 h2 {
+  color: var(--text-color);
   letter-spacing: 1px;
   font-size: 18px;
   text-transform: uppercase;
@@ -71,6 +72,11 @@ h5 {
   bottom: 0;
 }
 
+h5 a {
+  /* color: #dcc0e8; */
+  text-decoration: underline;
+  cursor: crosshair;
+}
 /*if we color span we see that it's the numbers*/
 span {
   font-size: 10px;
@@ -100,7 +106,7 @@ span {
   height: 100%;
   border-top: 1px solid var(--text-color);
   border-right: 1px solid var(--text-color);
-  cursor: pointer;
+  cursor: crosshair;
   transition: 0.3s;
   flex: 1;
   will-change: flex;
@@ -142,7 +148,8 @@ span {
 }
 
 .grid-item.active > .img-wrap {
-  flex: 6;
+  /* flex: 6; */
+  flex: 4;
 }
 
 /*image CSS*/
@@ -159,9 +166,51 @@ span {
 }
 
 .grid-item.active > .img-wrap > .img {
-  transform: scale(1);
+  transform: scale(1.1);
   filter: blur(0px);
   transition: 0.9s;
   opacity: 1;
   transition: 1s;
 }
+
+@media screen and (max-width: 600px) {
+  .header {
+    height: 15%;
+    padding: 20px;
+  }
+
+  .grid {
+    top: 15%;
+    height: 85%;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .grid-item {
+    border-right: none;
+  }
+
+  .heading h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    /* font-family: "ivar"; */
+    letter-spacing: 1px;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  h5 {
+    /* font-family: "NeueMontreal"; */
+    font-size: 8px;
+    position: absolute;
+    bottom: 0;
+  }
+}
+/* 
+span {
+  display: none;
+} */
