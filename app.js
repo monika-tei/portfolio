@@ -1,7 +1,7 @@
 // define the selectors
 
 const grid = document.querySelector(".grid");
-const griditems = [...document.querySelectorAll(".grid-item")];
+const gridItems = [...document.querySelectorAll(".grid-item")];
 const gridRows = [...document.querySelectorAll(".row")];
 const images = [...document.querySelectorAll(".img")];
 const heading = document.querySelectorAll(".heading");
@@ -12,28 +12,66 @@ images.forEach((img, idx) => {
 });
 
 // loop through all grid items
-griditems.forEach((item, idx) => {
+gridItems.forEach((item, idx) => {
   item.addEventListener("click", (e) => {
-    console.log(e.target);
     let isActive = e.target.classList.contains("active");
-    for (let i = 0; i < griditems.length; i++) {
-      griditems[i].classList.remove("active");
+    console.log(e.target);
+    for (let i = 0; i < gridItems.length; i++) {
+      gridItems[i].classList.remove("active");
     }
 
     // if the div that we clicked had active
     if (isActive) {
       gridRows[0].style.height = "50%";
       gridRows[1].style.height = "50%";
-      for (let i = 0; i < griditems.length; i++) {
-        griditems[i].classList.remove("expand");
+      for (let i = 0; i < gridItems.length; i++) {
+        gridItems[i].classList.remove("expand");
       }
       // stop here so it doesnt process anything else
       return;
     }
 
-    griditems[idx].classList.add("active");
+    gridItems[idx].classList.add("active");
+
+    if (idx == 0 || idx == 3) {
+      setActive[(0, 3)];
+    }
+
+    if (idx == 1 || idx == 4) {
+      setActive[(1, 4)];
+    }
+
+    if (idx == 2 || idx == 5) {
+      setActive[(2, 5)];
+    }
+
+    if (idx <= 2) {
+      gridRows[0].style.height = "70%";
+      gridRows[1].style.height = "30%";
+    } else {
+      gridRows[0].style.height = "30%";
+      gridRows[1].style.height = "70%";
+    }
   });
 });
 
+function setActive(idxArr) {
+  for (let i = 0; i < gridItems.length; i++) {
+    if (idxArr.includes(i)) {
+      gridItems[i].classList.add("expand");
+    } else {
+      gridItems[i].classList.remove("expand");
+    }
+  }
+}
+
 //Time Stamp: 39:29
 // Continuing with the expand class so both rows are affected
+
+setTimeout(() => {
+  heading.classList.add("show");
+}, 500);
+
+setTimeout(() => {
+  grid.style.opacity = 1;
+}, 1000);

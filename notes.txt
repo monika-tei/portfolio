@@ -1,5 +1,8 @@
-Lef off here: 39:29
+Lef off here: 47:21
 https://www.youtube.com/watch?v=Yw76vUtrqdE&t=32s
+repo:
+https://github.com/conorbailey90/expanding-photo-gallery/blob/main/app.js
+
 
 
 General To Do:
