@@ -6,29 +6,21 @@ https://github.com/conorbailey90/expanding-photo-gallery/blob/main/app.js
 
 
 General To Do:
--- find images for RISIKO
--- find image for NOIA
--- find image for Copenhagenn Cartel (or video product that I did)
+-- find images for RISIKO ++
+-- find image for NOIA ++
+-- find image for Copenhagenn Cartel (or video product that I did) ++
 
 2 personal projects
 4 school projects
 
-- North Folk (UX research, documentation, SoMe)
-- Copenhagen Cartel (UX design, research, visual content)
-- Hacked Hogwarts Assignment (JS)
+- North Folk (UX research, documentation, SoMe) ++
+- Copenhagen Cartel (UX design, research, visual content) ++
+- Hacked Hogwarts Assignment (JS) ++
 
 Potentially: 
 - Beer Walks // client brief, some analysis, web analysis, competitor research, benchmarking
 _ StarDust Lab //
 - FOMO game // or something else? 
-
-RISIKO
-- Crowdfunding copy
-- Translation, Proofreading
-- Seeking Ad. partners
-
-NOIA
-- Contributor
 
 
 Side: the personal twist

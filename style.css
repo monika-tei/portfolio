@@ -11,7 +11,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  font-weight: 100;
+  font-weight: 200;
 }
 
 html,
@@ -66,38 +66,47 @@ h2 {
   text-transform: uppercase;
 }
 
-h5 {
-  font-size: 12px;
+.hide {
+  display: none;
+}
+
+.skills {
+  font-size: 13px;
   position: absolute;
   bottom: 0;
 }
 
-h5 a {
-  /* color: #dcc0e8; */
-  text-decoration: underline;
-  cursor: crosshair;
+a {
+  text-transform: uppercase;
+  pointer-events: all;
+  font-size: 16px;
+  color: #dcc0e8;
+  text-decoration: none;
+  cursor: pointer;
 }
 /*if we color span we see that it's the numbers*/
 span {
   font-size: 10px;
+  text-transform: uppercase;
 }
 
 /*Styling of the grid Section*/
 .grid {
   position: absolute;
-  top: 25%;
+  /* top: 25%; */
+  top: 45%;
   width: 100%;
   height: 75%;
   display: flex;
   flex-direction: column;
   opacity: 0;
-  transition: 1s;
+  transition: 1.2s;
 }
 
 .row {
   display: flex;
   height: 50%;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 /* To DO: look into will-change */
@@ -107,7 +116,7 @@ span {
   border-top: 1px solid var(--text-color);
   border-right: 1px solid var(--text-color);
   cursor: crosshair;
-  transition: 0.3s;
+  transition: 0.5s;
   flex: 1;
   will-change: flex;
   display: flex;
@@ -168,9 +177,9 @@ span {
 .grid-item.active > .img-wrap > .img {
   transform: scale(1.1);
   filter: blur(0px);
-  transition: 0.9s;
+  /* transition: 0.9s; */
   opacity: 1;
-  transition: 1s;
+  transition: 1.1s;
 }
 
 @media screen and (max-width: 600px) {
@@ -210,7 +219,3 @@ span {
     bottom: 0;
   }
 }
-/* 
-span {
-  display: none;
-} */

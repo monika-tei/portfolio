@@ -5,6 +5,7 @@ const gridItems = [...document.querySelectorAll(".grid-item")];
 const gridRows = [...document.querySelectorAll(".row")];
 const images = [...document.querySelectorAll(".img")];
 const heading = document.querySelector(".heading");
+const info = [...document.querySelectorAll("h4")];
 
 // use JS to apply the images, its JPG not JPEG
 images.forEach((img, idx) => {
@@ -13,7 +14,7 @@ images.forEach((img, idx) => {
 
 // loop through all grid items
 gridItems.forEach((item, idx) => {
-  item.addEventListener("click", (e) => {
+  item.addEventListener("mouseover", (e) => {
     let isActive = e.target.classList.contains("active");
     console.log(e.target);
     for (let i = 0; i < gridItems.length; i++) {
@@ -32,7 +33,6 @@ gridItems.forEach((item, idx) => {
     }
 
     gridItems[idx].classList.add("active");
-
     if (window.innerWidth > 600) {
       if (idx == 0 || idx == 3) {
         setActive[(0, 3)];
@@ -54,6 +54,16 @@ gridItems.forEach((item, idx) => {
         gridRows[1].style.height = "70%";
       }
     }
+  });
+
+  //CHAT GPT suggestion on the mouseout
+  item.addEventListener("mouseout", (e) => {
+    gridItems.forEach((item) => {
+      item.classList.remove("active");
+    });
+    gridRows[0].style.height = "50%";
+    gridRows[1].style.height = "50%";
+    setActive([]);
   });
 });
 
