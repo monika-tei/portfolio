@@ -5,11 +5,11 @@ const gridItems = [...document.querySelectorAll(".grid-item")];
 const gridRows = [...document.querySelectorAll(".row")];
 const images = [...document.querySelectorAll(".img")];
 const heading = document.querySelector(".heading");
-const info = [...document.querySelectorAll("h4")];
 
 // use JS to apply the images, its JPG not JPEG
 images.forEach((img, idx) => {
-  img.style.backgroundImage = `url(/images/${idx + 1}.jpg)`;
+  // img.style.backgroundImage = `url(./images/${idx + 1}.jpg)`;
+  img.style.backgroundImage = `url(/portfolio/images/${idx + 1}.jpg)`;
 });
 
 // loop through all grid items
