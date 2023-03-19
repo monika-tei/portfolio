@@ -8,8 +8,8 @@ const heading = document.querySelector(".heading");
 
 // use JS to apply the images, its JPG not JPEG
 images.forEach((img, idx) => {
-  // img.style.backgroundImage = `url(./images/${idx + 1}.jpg)`;
-  img.style.backgroundImage = `url(/portfolio/images/${idx + 1}.jpg)`;
+  img.style.backgroundImage = `url(./images/${idx + 1}.jpg)`;
+  // img.style.backgroundImage = `url(/portfolio/images/${idx + 1}.jpg)`;//works on Github Pages
 });
 
 // loop through all grid items
