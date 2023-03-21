@@ -252,6 +252,18 @@ h2 {
 }
 
 @media screen and (max-width: 600px) {
+  nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    justify-content: space-evenly;
+    padding: 1rem 0;
+  }
+
+  nav a {
+    padding: 0;
+  }
   #intro {
     margin-top: 5px;
     padding: 2rem 1rem;
@@ -267,11 +279,15 @@ h2 {
 
   #gallery {
     height: 15%;
-    padding: 20px;
+    padding: 1rem;
+  }
+
+  .projects h1 {
+    font-size: 3.157rem;
   }
 
   #grid {
-    top: 92%;
+    top: 100vh;
     height: 90%;
     /* height: 85%; */
     /* top: 15%; */
@@ -285,25 +301,25 @@ h2 {
     border-right: none;
   }
 
-  .projects h1 {
-    font-size: 3.157rem;
-  }
-
   h2 {
     /* font-family: "ivar"; */
     letter-spacing: 1px;
-    font-size: 12px;
+    font-size: 0.772rem;
     text-transform: uppercase;
   }
 
-  h5 {
-    /* font-family: "NeueMontreal"; */
+  h2 span {
+    font-size: 0.555rem;
+  }
+  /* h5 {
+    font-family: "NeueMontreal";
     font-size: 8px;
     position: absolute;
     bottom: 0;
-  }
+  } */
 
   .skills {
+    display: none;
     font-size: 10px;
   }
 }

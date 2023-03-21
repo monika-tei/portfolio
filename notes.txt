@@ -1,5 +1,4 @@
 To Do:
 
--Add CV PDF
 -Double check responsiveness
 -Look into some nicer display fonts
