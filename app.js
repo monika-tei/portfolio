@@ -1,10 +1,9 @@
 // define the selectors
-
-const grid = document.querySelector(".grid");
+const grid = document.querySelector("#grid");
 const gridItems = [...document.querySelectorAll(".grid-item")];
 const gridRows = [...document.querySelectorAll(".row")];
 const images = [...document.querySelectorAll(".img")];
-const heading = document.querySelector(".heading");
+const projects = document.querySelector(".projects");
 
 // use JS to apply the images, its JPG not JPEG
 images.forEach((img, idx) => {
@@ -77,12 +76,9 @@ function setActive(idxArr) {
   }
 }
 
-//Time Stamp: 39:29
-// Continuing with the expand class so both rows are affected
-
 setTimeout(() => {
-  heading.classList.add("show");
-}, 500);
+  projects.classList.add("show");
+}, 400);
 
 setTimeout(() => {
   grid.style.opacity = 1;

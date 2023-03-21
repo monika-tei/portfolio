@@ -1,9 +1,8 @@
-/*Using CSS variables*/
-
 :root {
   --bgr-color: #131313;
   --text-color: #ffffff;
   --active-text-color: #dcc0e8;
+  --accent: #efffb9;
 }
 
 * {
@@ -26,17 +25,70 @@ body {
   height: 100vh; */
 }
 
-.header {
+/*Define Intro area*/
+nav {
+  display: flex;
+  padding-top: 1rem;
+  padding-right: 5rem;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+
+nav a {
+  font-size: 1.266rem;
+  color: var(--text-color);
+  padding-right: 3rem;
+}
+
+a:hover {
+  color: var(--active-text-color);
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  transition: all ease 0.5s;
+}
+
+/*Define Intro area*/
+#intro {
+  display: flex;
+  min-height: 50vh;
+  padding: 3rem 2rem;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--bgr-color);
+  margin-top: 100px;
+}
+
+#intro div {
+  width: 50vw;
+  min-width: 400px;
+}
+#intro div h3 {
+  font-size: 1.953rem;
+  line-height: 2rem;
+  padding-bottom: 3.25rem;
+}
+
+#intro div p {
+  padding-bottom: 1rem;
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+  /* font-size: 1rem; */
+}
+
+/*Define Projects area*/
+
+#gallery {
   position: absolute;
   /* top: 0;
   left: 0; */
   width: 100%;
-  height: 25%;
-  padding: 20px;
+  height: 20%;
+  padding: 1.5rem;
+  background-color: var(--placeholder);
+  /* padding: 20px; */
 }
 
-/*the heading has a span*/
-.heading {
+.projects {
   line-height: 70px;
   position: absolute;
   bottom: 20px;
@@ -46,40 +98,23 @@ body {
 }
 
 /*the heading that is tilted 5degrees is not shown because of overflow hidden */
-.heading h1 {
+.projects h1 {
   font-weight: 400;
-  font-size: 70px;
-
+  font-size: 5.063rem;
   transform: translateY(100%) rotate(5deg);
   transition: 0.5s;
 }
 
 /*twill apply show class with JS*/
-.heading.show {
+.projects.show {
   transform: rotate(0deg);
 }
 
-.heading.show h1 {
+.projects.show h1 {
   transform: translateY(0%) rotate(0deg);
 }
 
-h2 {
-  color: var(--text-color);
-  letter-spacing: 1px;
-  font-size: 18px;
-  text-transform: uppercase;
-}
-
-.hide {
-  display: none;
-}
-
-.skills {
-  font-size: 13px;
-  position: absolute;
-  bottom: 0;
-}
-
+/*Define Active States*/
 a {
   text-transform: uppercase;
   pointer-events: all;
@@ -88,17 +123,16 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
-/*if we color span we see that it's the numbers*/
+
 span {
-  font-size: 10px;
+  font-size: 0.79rem;
   text-transform: uppercase;
 }
 
-/*Styling of the grid Section*/
-.grid {
+/*Define Grid*/
+#grid {
   position: absolute;
-  /* top: 25%; */
-  top: 45%;
+  top: 90%;
   width: 100%;
   height: 75%;
   display: flex;
@@ -106,6 +140,17 @@ span {
   opacity: 0;
   transition: 1.2s;
 }
+
+/* .grid {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transition: 1.2s;
+} */
 
 .row {
   display: flex;
@@ -126,6 +171,26 @@ span {
   display: flex;
   padding: 10px;
   overflow: hidden;
+}
+
+/*Grid Styling and sizing*/
+
+h2 {
+  color: var(--text-color);
+  letter-spacing: 1px;
+  font-size: 1.125rem;
+  /* font-size: prev 18px; */
+  text-transform: uppercase;
+}
+
+.skills {
+  font-size: 0.889rem; /*prev 13px*/
+  position: absolute;
+  bottom: 0;
+}
+
+.hide {
+  display: none;
 }
 
 .active {
@@ -187,14 +252,29 @@ span {
 }
 
 @media screen and (max-width: 600px) {
-  .header {
+  #intro {
+    margin-top: 5px;
+    padding: 2rem 1rem;
+  }
+
+  #intro div h3 {
+    font-size: 1.424rem;
+  }
+
+  #intro div p {
+    font-size: 0.937rem;
+  }
+
+  #gallery {
     height: 15%;
     padding: 20px;
   }
 
-  .grid {
-    top: 15%;
-    height: 85%;
+  #grid {
+    top: 92%;
+    height: 90%;
+    /* height: 85%; */
+    /* top: 15%; */
   }
 
   .row {
@@ -205,8 +285,8 @@ span {
     border-right: none;
   }
 
-  .heading h1 {
-    font-size: 50px;
+  .projects h1 {
+    font-size: 3.157rem;
   }
 
   h2 {
@@ -216,15 +296,14 @@ span {
     text-transform: uppercase;
   }
 
-  .skills {
-    display: none;
-  }
-  /*   
   h5 {
-    font-family: "NeueMontreal";
-    font-size: 3rem;
-    color: red;
+    /* font-family: "NeueMontreal"; */
+    font-size: 8px;
     position: absolute;
     bottom: 0;
-  } */
+  }
+
+  .skills {
+    font-size: 10px;
+  }
 }
