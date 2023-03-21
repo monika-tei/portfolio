@@ -1,4 +1,5 @@
 To Do:
 
--Double check responsiveness
+-Double check responsiveness... now github does not update...
+- breaks on 370px
 -Look into some nicer display fonts

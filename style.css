@@ -297,7 +297,10 @@ h2 {
   }
 
   #intro div p {
-    font-size: 0.937rem;
+    font-size: 0.702rem;
+    line-height: 0.9rem;
+    font-weight: 100;
+    padding-bottom: 0.7rem;
   }
 
   #gallery {
@@ -335,12 +338,6 @@ h2 {
   h2 span {
     font-size: 0.555rem;
   }
-  /* h5 {
-    font-family: "NeueMontreal";
-    font-size: 8px;
-    position: absolute;
-    bottom: 0;
-  } */
 
   .skills {
     display: none;
