@@ -32,3 +32,5 @@ Side: the personal twist
 - Find an image that shows YOU
 - Find a nice typeface 
 - Find a nice accent element
+
+poppins - make responsive .skills
