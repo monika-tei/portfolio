@@ -262,7 +262,7 @@ h2 {
   #intro div h3 {
     font-size: 1.563rem;
     padding-bottom: 2.5rem;
-    color: aquamarine;
+    
   }
 
   #intro div p {
@@ -297,10 +297,8 @@ h2 {
   }
 
   #intro div p {
-    font-size: 0.702rem;
+    font-size: 0.889rem;
     line-height: 0.9rem;
-    font-weight: 100;
-    padding-bottom: 0.7rem;
   }
 
   #gallery {
