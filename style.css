@@ -262,7 +262,6 @@ h2 {
   #intro div h3 {
     font-size: 1.563rem;
     padding-bottom: 2.5rem;
-    color: aquamarine;
   }
 
   #intro div p {
@@ -283,24 +282,39 @@ h2 {
   nav a {
     padding: 0;
   }
-  #intro {
+  /* #intro {
     margin-top: 5px;
     padding: 2rem 1rem;
+  } */
+
+  /* #intro div {
+    width: max-content;
+  } */
+
+  /*NEW CHANGES, Wednesday 12th April*/
+
+  #intro {
+    position: absolute;
+    left: 0;
+    justify-content: unset;
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
   #intro div {
-    width: max-content;
+    min-width: fit-content;
   }
+
+  /*END, Wednesday 12th April*/
 
   #intro div h3 {
     font-size: 1.424rem;
   }
 
   #intro div p {
-    font-size: 0.702rem;
-    line-height: 0.9rem;
-    font-weight: 100;
-    padding-bottom: 0.7rem;
+    font-size: 0.889rem;
+    line-height: 1.15rem;
   }
 
   #gallery {
