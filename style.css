@@ -5,6 +5,16 @@
   --accent: #efffb9;
 }
 
+@font-face {
+  font-family: "ivar";
+  src: url(/type/IvarDisplayCondensed-Light.woff2);
+}
+
+@font-face {
+  font-family: "NeueMontreal";
+  src: url(/type/NeueMontreal-Light.woff);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -35,6 +45,8 @@ nav {
 }
 
 nav a {
+  font-family: NeueMontreal;
+  letter-spacing: 0.1rem;
   font-size: 1.266rem;
   color: var(--text-color);
   padding-right: 3rem;
@@ -72,16 +84,22 @@ a:hover {
 #intro div p {
   padding-bottom: 1rem;
   line-height: 1.5rem;
-  /* font-size: 1.2rem; */
-  font-size: 1.25rem;
+  font-size: 1rem;
+}
+
+#intro span {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.125rem;
+  text-transform: none;
 }
 
 /*Define Projects area*/
 
 #gallery {
   position: absolute;
-  /* top: 67%; */
-  top: 67vh;
+  /* top: 67%;  and 70vh*/
+  top: 72vh;
   left: 0;
   width: 100%;
   height: 20%;
@@ -100,6 +118,7 @@ a:hover {
 
 /*the heading that is tilted 5degrees is not shown because of overflow hidden */
 .projects h1 {
+  font-family: "ivar";
   font-weight: 400;
   font-size: 5.063rem;
   transform: translateY(100%) rotate(5deg);
@@ -133,9 +152,8 @@ span {
 /*Define Grid*/
 #grid {
   position: absolute;
-  /* top: 90%; */
-  top: 90vh;
-
+  /* top: 90vh; */
+  top: 102vh;
   width: 100%;
   height: 75%;
   display: flex;
@@ -180,7 +198,9 @@ span {
 
 h2 {
   color: var(--text-color);
-  letter-spacing: 1px;
+
+  letter-spacing: 0.1rem;
+  font-family: NeueMontreal;
   font-size: 1.125rem;
   /* font-size: prev 18px; */
   text-transform: uppercase;
@@ -190,6 +210,7 @@ h2 {
   font-size: 0.889rem; /*prev 13px*/
   position: absolute;
   bottom: 0;
+  color: lightgrey;
 }
 
 .hide {
@@ -298,8 +319,8 @@ h2 {
     left: 0;
     justify-content: unset;
     width: 100%;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 1.5rem;
+    padding-right: 1rem;
   }
 
   #intro div {
@@ -314,7 +335,11 @@ h2 {
 
   #intro div p {
     font-size: 0.889rem;
-    line-height: 0.9rem;
+    line-height: 1.2rem;
+  }
+
+  #intro span {
+    font-size: 1rem;
   }
 
   #gallery {
@@ -343,7 +368,6 @@ h2 {
   }
 
   h2 {
-    /* font-family: "ivar"; */
     letter-spacing: 1px;
     font-size: 0.772rem;
     text-transform: uppercase;
