@@ -150,6 +150,11 @@ img {
   background-position: center;
 }
 
+.small {
+  margin: 0 auto;
+  width: 65%;
+}
+
 /*RIGHT - Done for now*/
 .desc-box {
   /* border: 1px solid red; */
