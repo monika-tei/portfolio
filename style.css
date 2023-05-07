@@ -123,7 +123,7 @@ a:hover {
 
 /*the heading that is tilted 5degrees is not shown because of overflow hidden */
 .projects h1 {
-  font-family: "ivar";
+  font-family: "Cotford";
   font-weight: 400;
   font-size: 5.063rem;
   transform: translateY(100%) rotate(5deg);
@@ -308,16 +308,6 @@ h2 {
   nav a {
     padding: 0;
   }
-  /* #intro {
-    margin-top: 5px;
-    padding: 2rem 1rem;
-  } */
-
-  /* #intro div {
-    width: max-content;
-  } */
-
-  /*NEW CHANGES, Wednesday 12th April*/
 
   #intro {
     position: absolute;
