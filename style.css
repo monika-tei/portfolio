@@ -7,12 +7,17 @@
 
 @font-face {
   font-family: "ivar";
-  src: url(/type/IvarDisplayCondensed-Light.woff2);
+  src: url(../type/IvarDisplayCondensed-Light.woff2);
 }
 
 @font-face {
   font-family: "NeueMontreal";
-  src: url(/type/NeueMontreal-Light.woff);
+  src: url(../type/NeueMontreal-Light.woff);
+}
+
+@font-face {
+  font-family: "Cotford";
+  src: url(../type/Cotford\ Text\ Light.ttf);
 }
 
 * {
