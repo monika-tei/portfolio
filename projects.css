@@ -104,20 +104,51 @@ a {
 /*Grid*/
 .cardWrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 70vh;
-  margin: 1rem auto;
+  grid-template-columns: 1.5fr 1fr;
+  height: 78vh;
+  margin: 0 auto;
   border: 1px solid hotpink;
 }
 
-/*LEFT*/
+/*LEFT with overflow scroll*/
+/**keeping Articles*/
 .img-box {
   border: 1px solid yellow;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
   overflow-y: auto;
-  margin-top: 5rem;
+  padding: 0 1rem 0 1rem;
+  margin-top: 2rem;
+}
+
+/*form*/
+.img-wrapper {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.img-box::-webkit-scrollbar {
+  width: 1;
+  background: var(--active-text-color);
+  border-radius: 20px;
+}
+
+.img-box::-webkit-scrollbar-thumb {
+  background: hotpink;
+  border-radius: 20px;
+  height: 5px;
+}
+
+img {
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
 }
 
 /*RIGHT - Done for now*/
@@ -162,6 +193,13 @@ a {
     display: flex;
     flex-direction: column-reverse;
     justify-content: start;
+  }
+
+  .img-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow-y: auto;
   }
 
   .desc-box {
