@@ -161,12 +161,21 @@ img {
   justify-content: center;
 }
 
+span {
+  font-weight: 500;
+}
 .text {
   padding: 2rem;
   border: 1px solid lightcyan;
 }
 .link {
   margin-top: 1rem;
+}
+
+ul {
+  padding-top: 2rem;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
 }
 
 /*LEFT - overflow scrolling, cards with images*/
