@@ -78,7 +78,7 @@ function setActive(idxArr) {
 
 setTimeout(() => {
   projects.classList.add("show");
-}, 400);
+}, 100);
 
 setTimeout(() => {
   grid.style.opacity = 1;
