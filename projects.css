@@ -130,12 +130,14 @@ a {
 
 .img-box::-webkit-scrollbar {
   width: 1;
-  background: var(--active-text-color);
+  background: var(--text-color);
+
+  /* background: var(--active-text-color); */
   border-radius: 20px;
 }
 
 .img-box::-webkit-scrollbar-thumb {
-  background: hotpink;
+  background: var(--active-text-color);
   border-radius: 20px;
   height: 5px;
 }
